@@ -1,0 +1,16 @@
+torch==2.3.0
+torchvision==0.18.0
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+opencv-python-headless==4.9.0.80
+Pillow==10.3.0
+tqdm==4.66.4
+
+# NOTE: this file is used for standalone training scripts, where you likely
+# WANT a GPU-enabled torch build (hence no +cpu pin here). If training on a
+# machine without a GPU, install CPU wheels instead for a much smaller/faster
+# download:
+#   pip install torch==2.3.0+cpu torchvision==0.18.0+cpu \
+#     --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r model/requirements.txt --no-deps  # then skip the two lines above

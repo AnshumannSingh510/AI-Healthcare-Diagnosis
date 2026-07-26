@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# Node
+node_modules/
+frontend/dist/
+npm-debug.log*
+
+# Env
+.env
+*.env.local
+
+# Model weights and datasets (large binary files — do not commit)
+model/weights/*.pt
+model/weights/*.pth
+dataset/raw/
+dataset/*.csv
+
+# Storage (uploaded images, heatmaps, generated reports)
+backend/storage/
+storage/uploads/
+storage/heatmaps/
+storage/reports/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
+# Alembic
+backend/alembic/versions/__pycache__/
